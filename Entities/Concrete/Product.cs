@@ -1,11 +1,11 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities; 
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Entities.Concrete
 {
-    public class Product:IEntity
+    public class Product : IEntity
     {
         //public  Buffer classa diger katmanlarda erisebilsin demek 
         //internal ise  sadece entities erisebilir demek

@@ -1,4 +1,4 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -15,8 +15,7 @@ namespace Core.DataAccess
     //T IEntity ya  da  IEntity implemente eden baska bir nesne  olabilir
 
     public interface IEntityRepository<T> where T:class,IEntity,new()
-    {
-
+    { 
         List<T> GetAll(Expression<Func<T,bool>> filter =null);
         //filtreleme islemi ici kullanilir null donduru deger dondurmez demek 
         T Get(Expression<Func<T, bool>> filter);
